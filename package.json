@@ -1,0 +1,18 @@
+{
+  "name": "pet-projects",
+  "version": "1.0.0",
+  "author": "Dmitry Tychinin",
+  "license": "ISC",
+  "description": "Monorepo for pet projects with common utils",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tde2803/pet-projects.git"
+  },
+  "workspaces": [
+    "packages/*",
+    "products/*"
+  ],
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  }
+}

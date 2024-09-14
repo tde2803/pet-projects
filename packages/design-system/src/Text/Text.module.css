@@ -1,0 +1,36 @@
+.text {
+    color: var(--color-black);
+    font-family: 'Roboto', 'sans-serif';
+}
+
+.text--l {
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.text--m {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.text--s {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.text--xs {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.text--bold {
+    font-weight: 700;
+}
+
+.text--regular {
+    font-weight: 400;
+}
+
+.text--light {
+    font-weight: 300;
+}
