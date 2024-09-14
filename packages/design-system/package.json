@@ -1,15 +1,19 @@
 {
-    "name": "design-system",
-    "version": "1.0.0",
+    "name": "@tde2803/design-system",
+    "version": "1.0.2",
     "author": "Dmitry Tychinin",
     "license": "ISC",
     "description": "UI Components React library for personal use",
+    "main": "dist/bundle.js",
+    "types": "dist/index.d.ts",
     "repository": {
         "type": "git",
         "url": "https://github.com/tde2803/design-system.git"
     },
     "scripts": {
-        "storybook": "storybook dev"
+        "storybook": "storybook dev",
+        "build": "webpack --mode production",
+        "watch": "webpack --mode development"
     },
     "devDependencies": {
         "@storybook/addon-essentials": "8.2.9",
@@ -21,6 +25,7 @@
         "style-loader": "4.0.0",
         "ts-loader": "9.5.1",
         "typescript": "5.5.4",
+        "url-loader": "^4.1.1",
         "webpack": "5.94.0",
         "webpack-cli": "5.1.4"
     },

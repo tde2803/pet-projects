@@ -1,0 +1,3 @@
+link-workspace-packages=true
+
+@tde2803:registry=<verdaccio host:port>

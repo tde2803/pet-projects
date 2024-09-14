@@ -1,0 +1,3 @@
+[submodule "products/form-builder"]
+	path = products/form-builder
+	url = https://github.com/tde2803/form-builder.git

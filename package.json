@@ -1,18 +1,20 @@
 {
-  "name": "pet-projects",
-  "version": "1.0.0",
-  "author": "Dmitry Tychinin",
-  "license": "ISC",
-  "description": "Monorepo for pet projects with common utils",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/tde2803/pet-projects.git"
-  },
-  "workspaces": [
-    "packages/*",
-    "products/*"
-  ],
-  "devDependencies": {
-    "prettier": "^3.3.3"
-  }
+    "name": "pet-projects",
+    "version": "1.0.0",
+    "author": "Dmitry Tychinin",
+    "license": "ISC",
+    "description": "Monorepo for pet projects with common utils",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tde2803/pet-projects.git"
+    },
+    "scripts": {
+        "dev:form-builder": "node removeLibraryDirectories.js && concurrently -k -n LIBRARIES,APPLICATION -c blue,green \"pnpm run --filter \"./packages/*\" watch\" \"node gatherDirsAndRunFormBuilder.js\""
+    },
+    "devDependencies": {
+        "concurrently": "9.0.1",
+        "glob": "^11.0.0",
+        "prettier": "3.3.3",
+        "wait-on": "8.0.1"
+    }
 }

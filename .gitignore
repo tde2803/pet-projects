@@ -9,3 +9,6 @@ dist/
 
 # Test coverage directory
 coverage/
+
+# NPM configuration
+.npmrc
